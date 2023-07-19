@@ -8,5 +8,12 @@
 <link rel="stylesheet" href="./index.css">
 <body>
     <h1>今天学习koa</h1>
+    <img src="http://localhost:3000/captcha" alt="" class="img">
 </body>
+<script>
+    let img = document.querySelector('.img')
+    img.addEventListener('click',function(){
+        img.src = 'http://localhost:3000/captcha?d=' + Date.now()
+    })
+</script>
 </html>
